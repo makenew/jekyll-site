@@ -1,0 +1,12 @@
+include:
+  - .nojekyll
+
+gems:
+  - jekyll-assets
+
+assets:
+  sources:
+    - _assets/bower_components
+
+livereload:
+  port: 35729

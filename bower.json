@@ -1,0 +1,37 @@
+{
+  "name": "makenew-jekyll-site",
+  "version": "1.0.0",
+  "description": "Jekyll site skeleton.",
+  "main": "index.html",
+  "private": true,
+  "authors": [
+    "Evan Sosenko <razorx@evansosenko.com>"
+  ],
+  "keywords": [
+    "jekyll"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/makenew/jekyll-site",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/makenew/jekyll-site.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "_site",
+    "makenew.sh",
+    "package.json",
+    "npm-shrinkwrap.json",
+    "Gemfile",
+    "Gemfile.lock",
+    "Guardfile",
+    "Rakefile"
+  ],
+  "dependencies": {
+    "console-polyfill": "0.2.2",
+    "fastclick": "1.0.6",
+    "normalize-css": "3.0.3"
+  }
+}

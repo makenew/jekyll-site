@@ -1,0 +1,15 @@
+<!doctype html>
+<html class="no-js" lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    {% if jekyll.environment == 'development' %}
+      {% include livereload.html %}
+    {% endif %}
+    {% include head.html %}
+    {% stylesheet main %}
+    {% javascript vendor/modernizr %}
+  </head>
+  <body>
+    {{ content }}
+  </body>
+  {% javascript main %}
+</html>

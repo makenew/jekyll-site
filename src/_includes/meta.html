@@ -1,0 +1,138 @@
+{% if site.data.meta.title or page.title or page.meta.title %}
+  {% if page.meta.title %}
+    {% assign title = page.meta.title %}
+  {% elsif page.title %}
+    {% assign title = page.title %}
+  {% else %}
+    {% assign title = site.data.meta.title %}
+  {% endif %}
+  <title>{{ title }}</title>
+  <meta property="og:title" content="{{ title }}">
+{% endif %}
+
+{% if page.meta.description %}
+  {% assign description = page.meta.description %}
+{% elsif page.preview %}
+  {% assign description = page.preview %}
+{% elsif page.excerpt %}
+  {% assign description = page.excerpt %}
+{% elsif site.data.meta.description %}
+  {% assign description = site.data.meta.description %}
+{% else %}
+  {% assign description = null %}
+{% endif %}
+
+{% if description %}
+  <meta name="description" content="{{ description | strip_html }}">
+  <meta property="og:description" content="{{ description | strip_html }}">
+{% endif %}
+
+{% assign path = page.url | replace: 'index.html', '' %}
+<link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ path }}">
+<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ path }}">
+
+{% if site.data.meta.name %}
+  <meta property="og:site_name" content="{{ site.data.meta.name }}">
+  <meta name="application-name" content="{{ site.data.meta.name }}">
+{% endif %}
+
+{% if page.meta.updated %}
+  {% assign updated = page.meta.updated %}
+{% elsif page.date %}
+  {% assign updated = page.date %}
+{% else %}
+  {% assign updated = site.time %}
+{% endif %}
+<meta property="og:updated_time" content="{{ updated | date_to_xmlschema }}">
+
+{% if site.data.meta.locale or page.meta.locale %}
+  {% if page.meta.locale %}
+    {% assign locale = page.meta.locale %}
+  {% else %}
+    {% assign locale = site.data.meta.locale %}
+  {% endif %}
+  <meta property="og:locale" content="{{ locale }}">
+{% endif %}
+
+{% if page.meta.determiner %}
+  <meta property="og:determiner" content="{{ page.meta.determiner }}">
+{% endif %}
+
+{% if site.data.meta.keywords or page.meta.keywords
+      or page.categories or page.tags %}
+  {% capture keywords %}
+    {% if page.meta.keywords %}
+      {{ page.meta.keywords | join:',' }},
+    {% endif %}
+
+    {% if page.tags and page.tags != empty %}
+      {{ page.tags | join:',' }},
+    {% endif %}
+
+    {% if page.categories and page.categories != empty %}
+      {{ page.categories | join:',' }},
+    {% endif %}
+
+    {% if site.data.meta.keywords %}
+      {{ site.data.meta.keywords | join:',' }}
+    {% endif %}
+    {% endcapture %}
+  <meta property="keywords"
+        content="{{ keywords | strip_newlines | replace:'  ','' }}">
+{% endif %}
+
+{% if site.data.meta.image or page.meta.image %}
+  {% if page.meta.image %}
+    {% assign image = page.meta.image %}
+  {% else %}
+    {% assign image = site.data.meta.image %}
+  {% endif %}
+  <meta property="og:image"
+        content="{{ site.url }}{{ site.baseurl }}/{{ image }}">
+{% elsif site.data.meta.image_asset or page.meta.image_asset %}
+  {% if page.meta.image_asset %}
+    {% assign image = page.meta.image_asset %}
+  {% else %}
+    {% assign image = site.data.meta.image_asset %}
+  {% endif %}
+  <meta property="og:image" content="{{ image | asset_path }}">
+{% endif %}
+
+{% if page.meta.audio %}
+  <meta property="og:audio"
+        content="{{ site.url }}{{ site.baseurl }}/{{ page.meta.audio }}">
+{% endif %}
+
+{% if page.meta.video %}
+  <meta property="og:video"
+        content="{{ site.url }}{{ site.baseurl }}/{{ page.meta.video }}">
+{% elsif page.meta.youtube %}
+  <meta property="og:video"
+        content="https://www.youtube.com/v/{{ page.meta.youtube }}">
+{% endif %}
+
+{% if page.meta.type %}
+  <meta property="og:type" content="{{ page.meta.type }}">
+{% endif %}
+
+{% if site.data.meta.twitter.site %}
+  <meta name="twitter:site" content="{{ site.data.meta.twitter.site }}">
+{% endif %}
+
+{% if site.data.meta.twitter.card or page.meta.twitter.card %}
+  {% if page.meta.twitter.card %}
+    {% assign card = page.meta.twitter.card %}
+  {% else %}
+    {% assign card = site.data.meta.twitter.card %}
+  {% endif %}
+  <meta name="twitter:card" content="{{ card }}">
+{% endif %}
+
+{% if site.data.meta.twitter.creator or page.meta.twitter.creator %}
+  {% if page.meta.twitter.creator %}
+    {% assign creator = page.meta.twitter.creator %}
+  {% else %}
+    {% assign creator = site.data.meta.twitter.creator %}
+  {% endif %}
+  <meta name="twitter:creator" content="{{ creator }}">
+{% endif %}

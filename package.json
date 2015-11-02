@@ -1,0 +1,30 @@
+{
+  "name": "makenew-jekyll-site",
+  "version": "1.0.0",
+  "description": "Jekyll site skeleton.",
+  "main": "index.html",
+  "private": true,
+  "keywords": [
+    "jekyll"
+  ],
+  "homepage": "https://github.com/makenew/jekyll-site",
+  "bugs": "https://github.com/makenew/jekyll-site/issues",
+  "repository": "makenew/jekyll-site",
+  "license": "MIT",
+  "authors": [
+    "Evan Sosenko <razorx@evansosenko.com>"
+  ],
+  "scripts": {
+    "install": "bower install",
+    "postinstall": "modernizr -c modernizr-config.json -d src/_assets/javascripts/vendor/modernizr.js"
+  },
+  "files": [
+    "_site"
+  ],
+  "dependencies": {
+    "modernizr": "^3.3.1"
+  },
+  "devDependencies": {
+    "bower": "^1.7.4"
+  }
+}

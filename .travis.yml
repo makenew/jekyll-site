@@ -1,0 +1,20 @@
+---
+language:
+  - ruby
+  - node_js
+rvm:
+  - 2
+node_js:
+  - stable
+cache:
+  bundler: true
+  directories:
+    - bower_components
+    - node_modules
+sudo: false
+
+before_script:
+  - npm install
+
+before_install:
+  - 'echo ''gem: --no-document'' > ~/.gemrc'
