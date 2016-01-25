@@ -225,6 +225,9 @@ Regenerate `modernizr.js` manually with
 $ npm run modernizr
 ```
 
+If Guard is running, then `modernizr.js` will be regeneraed
+automatically whenever `modernizr-config.json` changes.
+
 [Configure modernizr]: https://modernizr.com/download#setclasses
 
 ### Meta Tags

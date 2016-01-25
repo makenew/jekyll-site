@@ -11,3 +11,4 @@ gem 'uglifier', '~> 2.7.2'
 # Development Tools
 gem 'rake', '~> 10.5.0'
 gem 'guard-livereload', '~> 2.5.1'
+gem 'guard-shell', '~> 0.7.1'
