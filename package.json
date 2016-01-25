@@ -15,8 +15,10 @@
     "Evan Sosenko <razorx@evansosenko.com>"
   ],
   "scripts": {
-    "install": "bower install",
-    "postinstall": "modernizr -c modernizr-config.json -d src/_assets/javascripts/vendor/modernizr.js"
+    "install": "npm run bower",
+    "postinstall": "npm run modernizr",
+    "bower": "bower install",
+    "modernizr": "modernizr -c modernizr-config.json -d src/_assets/javascripts/vendor/modernizr.js"
   },
   "files": [
     "_site"

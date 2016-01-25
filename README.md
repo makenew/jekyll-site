@@ -159,8 +159,6 @@ $ npm install
 #### Updating requirements
 
 Requirements are version-locked to ensure consistent deploys.
-All Bower components must be set to an explicit version
-in `bower.json` (Bower does not support lock-files).
 
 To use the newest allowed Ruby gems,
 or after updating any gem versions in the `Gemfile`,
@@ -179,6 +177,15 @@ update and stage `npm-shrinkwrap.json` with
 $ npm update
 $ npm shrinkwrap --dev
 $ git add npm-shrinkwrap.json
+```
+
+All Bower components must be set to an explicit version
+in `bower.json` (Bower does not support lock-files).
+They are installed via an npm install hook.
+Install or update them manually with
+
+```
+$ npm run bower
 ```
 
 ### Rake
@@ -211,11 +218,11 @@ Modernizr is included as an npm package.
 
 Modernizr will automatically generate
 `src/_assets/javascripts/vendor/modernizr.js`
-as an npm postinstall hook.
+via an npm postinstall hook.
 Regenerate `modernizr.js` manually with
 
 ```
-$ npm run postinstall
+$ npm run modernizr
 ```
 
 [Configure modernizr]: https://modernizr.com/download#setclasses
