@@ -16,9 +16,10 @@
   ],
   "scripts": {
     "install": "npm run bower",
-    "postinstall": "npm run modernizr",
+    "postinstall": "npm run modernizr; npm run vulcanize",
     "bower": "bower install",
-    "modernizr": "modernizr -c modernizr-config.json -d src/_assets/javascripts/vendor/modernizr.js"
+    "modernizr": "modernizr -c modernizr-config.json -d src/_assets/javascripts/vendor/modernizr.js",
+    "vulcanize": "vulcanize src/_assets/elements/elements.html > src/_assets/elements/vulcanized.html"
   },
   "files": [
     "_site"
@@ -27,6 +28,7 @@
     "modernizr": "^3.3.1"
   },
   "devDependencies": {
-    "bower": "^1.7.4"
+    "bower": "^1.7.4",
+    "vulcanize": "^1.14.5"
   }
 }
