@@ -79,13 +79,13 @@ Bootstrap a new [Jekyll] site in less than a minute.
 
 5. Add your own favicons from [Favic-o-matic]
    to `src/_assets/images/favicon/` and overwrite `favicon.ico`.
-   You can make a quick [Font Awesome] favicon for upload at [FA2PNG].
+   You can make a quick [Font Awesome] favicon at [FA2PNG].
 
 6. Further customize the meta data in `src/_data/meta.yml`.
 
 7. [Lock your dependencies](#updating-requirements)
    with `Gemfile.lock` and `npm-shrinkwrap.json`.
-   You might also consider locking the Ruby and Node.js versions
+   Optionally, lock the Ruby and Node.js versions
    with `.ruby-version` and `.nvmrc`.
 
 [Choose a license]: http://choosealicense.com/
