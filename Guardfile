@@ -1,5 +1,5 @@
 guard 'livereload',
-      port: YAML.load_file('src/_config.yml')['livereload']['port'] do
+      port: YAML.load_file('_config.yml')['livereload']['port'] do
   watch %r{dist/.+}
 end
 
