@@ -4,6 +4,15 @@ task default: :build
 desc 'Remove build files with jekyll clean'
 task :clean do
   sh(*%w{bundle exec jekyll clean})
+
+  asset_cache = './src/.asset-cache'
+  if Dir.exists? asset_cache
+    puts " Cleaning #{asset_cache}..."
+    FileUtils.remove_entry_secure('src/.asset-cache')
+    puts "                    done."
+  else
+    puts "Nothing to do for #{asset_cache}."
+  end
 end
 
 desc 'Generate a production build of the site with Jekyll'
