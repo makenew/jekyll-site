@@ -2,6 +2,9 @@ GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.4.0)
+    autoprefixer-rails (6.3.1)
+      execjs
+      json
     coderay (1.1.0)
     colorator (0.1)
     concurrent-ruby (1.0.0)
@@ -95,6 +98,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails (~> 6.3.1)
   guard-livereload (~> 2.5.1)
   guard-shell (~> 0.7.1)
   jekyll (~> 3.1.0)

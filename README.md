@@ -14,7 +14,8 @@ Bootstrap a new [Jekyll] site in less than a minute.
 ### Features
 
 - Extreamly minimal HTML5 layout based on [HTML5 Boilerplate].
-- Asset pipeline with [Jekyll 3 Assets], [Sass], and [Uglifier].
+- Asset pipeline with [Jekyll 3 Assets],
+  [Autoprefixer], [Sass], and [Uglifier].
 - Extensive page-specific meta tag support with intelligent fallbacks.
 - Includes [FastClick], [Normalize.css], and [console-polyfill].
 - Customize [Modernizr] via configuration file.
@@ -26,6 +27,7 @@ Bootstrap a new [Jekyll] site in less than a minute.
 - [Travis CI] support.
 - Badges from [Shields.io].
 
+[Autoprefixer]: https://github.com/postcss/autoprefixer
 [Bower]: http://bower.io/
 [Bundler]: http://bundler.io/
 [console-polyfill]: https://github.com/paulmillr/console-polyfill

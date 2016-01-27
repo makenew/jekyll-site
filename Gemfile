@@ -5,6 +5,7 @@ gem 'jekyll', '~> 3.1.0'
 
 # Jekyll Assets
 gem 'jekyll-assets', '2.1.2'
+gem 'autoprefixer-rails', '~> 6.3.1'
 gem 'sass', '~> 3.4.19'
 gem 'uglifier', '~> 2.7.2'
 

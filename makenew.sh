@@ -43,7 +43,7 @@ makenew () {
   read -p '> GitHub user or organization name: ' mk_user
   read -p '> GitHub repository name: ' mk_repo
 
-  sed -i -e '10,128d;312,315d' README.md
+  sed -i -e '10,130d;314,317d' README.md
   sed -i -e "10i ${mk_description}" README.md
   sed -i -e '24d' bower.json
 
