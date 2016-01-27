@@ -1,3 +1,6 @@
+source: ./src
+destination: ./site
+
 include:
   - .nojekyll
 
