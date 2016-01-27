@@ -78,7 +78,7 @@
     {% endif %}
   {% endcapture %}
   <meta property="keywords"
-        content="{{ keywords | strip_newlines | replace:'  ','' }}">
+        content="{{ keywords | strip_newlines | remove: '  ' }}">
 {% endif %}
 
 {% if site.data.meta.image or page.meta.image %}
