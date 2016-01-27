@@ -1,3 +1,5 @@
+/* global FastClick */
+
 'use strict'
 
 // FastClick
