@@ -1,5 +1,5 @@
 source: ./src
-destination: ./site
+destination: ./dist
 
 include:
   - .nojekyll

@@ -220,7 +220,7 @@ rake dev      # Start a local Jekyll development server
 ### LiveReload
 
 LiveReload automatically updates the page in your browser
-when `_site/` files change.
+when `dist/` files change.
 Start the livereload server in the background with
 
 ```
