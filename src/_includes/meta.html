@@ -59,7 +59,7 @@
 {% endif %}
 
 {% if site.data.meta.keywords or page.meta.keywords
-      or page.categories or page.tags %}
+  or page.categories or page.tags %}
   {% capture keywords %}
     {% if page.meta.keywords %}
       {{ page.meta.keywords | join:',' }},
@@ -76,7 +76,7 @@
     {% if site.data.meta.keywords %}
       {{ site.data.meta.keywords | join:',' }}
     {% endif %}
-    {% endcapture %}
+  {% endcapture %}
   <meta property="keywords"
         content="{{ keywords | strip_newlines | replace:'  ','' }}">
 {% endif %}
