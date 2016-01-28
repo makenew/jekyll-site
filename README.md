@@ -58,7 +58,7 @@ Bootstrap a new [Jekyll] site in less than a minute.
    Optionally, reset to the latest [release][Releases] with
 
    ```
-   $ git reset --hard jekyll-site-v1.0.0
+   $ git reset --hard jekyll-site-v1.0.1
    ```
 
 2. Run
