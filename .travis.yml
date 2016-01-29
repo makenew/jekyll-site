@@ -1,12 +1,12 @@
 ---
 language: ruby
+sudo: false
 rvm: 2
 cache:
   bundler: true
   directories:
     - bower_components
     - node_modules
-sudo: false
 
 before_install:
   - nvm install
