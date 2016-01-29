@@ -8,9 +8,9 @@ cache:
     - node_modules
 sudo: false
 
-before_script:
-  - nvm install
-  - npm install
-
 before_install:
+  - nvm install
   - 'echo ''gem: --no-document'' > ~/.gemrc'
+
+before_script:
+  - npm install
