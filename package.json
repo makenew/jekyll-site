@@ -11,9 +11,10 @@
   "bugs": "https://github.com/makenew/jekyll-site/issues",
   "repository": "makenew/jekyll-site",
   "license": "MIT",
-  "authors": [
-    "Evan Sosenko <razorx@evansosenko.com>"
-  ],
+  "author": {
+    "name": "Evan Sosenko",
+    "email": "razorx@evansosenko.com"
+  },
   "scripts": {
     "install": "npm run bower",
     "postinstall": "npm run modernizr",
