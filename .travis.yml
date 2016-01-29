@@ -1,11 +1,6 @@
 ---
-language:
-  - ruby
-  - node_js
-rvm:
-  - 2
-node_js:
-  - stable
+language: ruby
+rvm: 2
 cache:
   bundler: true
   directories:
@@ -14,6 +9,7 @@ cache:
 sudo: false
 
 before_script:
+  - nvm install
   - npm install
 
 before_install:
