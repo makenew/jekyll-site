@@ -23,7 +23,7 @@ Bootstrap a new [Jekyll] site in less than a minute.
 - Development dependency management with [Bundler].
 - Front end dependency management with [Bower] and [npm].
 - [Rake] tasks for building and development.
-- [LiveReload] using [guard-livereload].
+- Cross-device [LiveReload] using [guard-livereload].
 - Production build testing with [HTML::Proofer].
 - [Travis CI] support.
 - Badges from [Shields.io].

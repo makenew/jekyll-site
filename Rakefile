@@ -27,7 +27,7 @@ end
 
 desc 'Start a local Jekyll development server'
 task dev: :clean do
-  spawn(*%w{bundle exec jekyll serve})
+  spawn(*%W{bundle exec jekyll serve --host #{Socket.gethostname}})
 end
 
 # Spawn a server and kill it gracefully when interrupt is received.
