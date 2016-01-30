@@ -1,3 +1,5 @@
+require 'html/proofer'
+
 desc 'Default task'
 task default: :build
 
@@ -15,11 +17,12 @@ task :clean do
   end
 end
 
-desc 'Generate a production build of the site with Jekyll'
+desc 'Generate and test a production build of the Jekyll site'
 task build: :clean do
   ENV['JEKYLL_ENV'] = 'production'
   sh(*%W{bundle exec jekyll build
          --config _config.yml,_config.#{ENV['JEKYLL_ENV']}.yml})
+  HTML::Proofer.new('dist', disable_external: true).run
 end
 
 desc 'Start a local Jekyll development server'

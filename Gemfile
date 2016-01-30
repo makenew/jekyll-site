@@ -12,4 +12,5 @@ gem 'uglifier', '~> 2.7'
 # Development Tools
 gem 'guard-livereload', '~> 2.5'
 gem 'guard-shell', '~> 0.7'
+gem 'html-proofer', '~> 2.6'
 gem 'rake', '~> 10.5'

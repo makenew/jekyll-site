@@ -24,6 +24,7 @@ Bootstrap a new [Jekyll] site in less than a minute.
 - Front end dependency management with [Bower] and [npm].
 - [Rake] tasks for building and development.
 - [LiveReload] using [guard-livereload].
+- Production build testing with [HTML::Proofer].
 - [Travis CI] support.
 - Badges from [Shields.io].
 
@@ -34,6 +35,7 @@ Bootstrap a new [Jekyll] site in less than a minute.
 [FastClick]: https://ftlabs.github.io/fastclick/
 [Favic-o-matic]: http://www.favicomatic.com/
 [guard-livereload]: https://github.com/guard/guard-livereload
+[HTML::Proofer]: https://github.com/gjtorikian/html-proofer
 [HTML5 Boilerplate]: https://html5boilerplate.com/
 [Jekyll 3 Assets]: https://jekyll.github.io/jekyll-assets/
 [LiveReload]: http://livereload.com/
@@ -213,7 +215,7 @@ $ npm run bower
 Run `$ rake -T` to see all Rake tasks.
 
 ```
-rake build    # Generate a production build of the site with Jekyll
+rake build    # Generate and test a production build of the Jekyll site
 rake clean    # Remove build files with jekyll clean
 rake default  # Default task
 rake dev      # Start a local Jekyll development server
