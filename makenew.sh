@@ -60,6 +60,9 @@ makenew () {
   find_replace "s/cd jekyll-site/cd ${mk_repo}/g"
   find_replace "s/\/jekyll-site/$(echo ${mk_baseurl} | sed s/\\//\\\\\\//g)/g"
 
+  mk_attribution='> Built from [makenew/jekyll-site](https://github.com/makenew/jekyll-site).'
+  sed -i -e "8i ${mk_attribution}\n" README.md
+
   echo
   echo 'Replacing boilerplate.'
 }
