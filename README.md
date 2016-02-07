@@ -19,25 +19,31 @@ Bootstrap a new [Jekyll] site in less than a minute.
 - Extensive page-specific meta tag support with intelligent fallbacks.
 - Includes [FastClick], [Normalize.css], and [console-polyfill].
 - Customize [Modernizr] via configuration file.
-- Favicons with [Favic-o-matic].
 - Development dependency management with [Bundler].
-- Front end dependency management with [Bower] and [npm].
 - [Rake] tasks for building and development.
 - Cross-device [LiveReload] using [guard-livereload].
 - Production build testing with [HTML::Proofer].
-- [Travis CI] support.
+- Front end dependency management with [Bower] and [npm].
+- Favicons with [Favic-o-matic].
+- The internet is for humans with [humans.txt].
+- [Travis CI] ready.
+- [Keep a CHANGELOG].
+- Consistent coding with [EditorConfig].
 - Badges from [Shields.io].
 
 [Autoprefixer]: https://github.com/postcss/autoprefixer
 [Bower]: http://bower.io/
 [Bundler]: http://bundler.io/
 [console-polyfill]: https://github.com/paulmillr/console-polyfill
+[EditorConfig]: http://editorconfig.org/
 [FastClick]: https://ftlabs.github.io/fastclick/
 [Favic-o-matic]: http://www.favicomatic.com/
 [guard-livereload]: https://github.com/guard/guard-livereload
 [HTML::Proofer]: https://github.com/gjtorikian/html-proofer
 [HTML5 Boilerplate]: https://html5boilerplate.com/
+[humans.txt]: http://humanstxt.org/
 [Jekyll 3 Assets]: https://jekyll.github.io/jekyll-assets/
+[Keep a CHANGELOG]: http://keepachangelog.com/
 [LiveReload]: http://livereload.com/
 [Modernizr]: https://modernizr.com/
 [Normalize.css]: https://necolas.github.io/normalize.css/
