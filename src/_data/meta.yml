@@ -5,6 +5,7 @@ name: makenew-jekyll-site
 locale: en_US
 image: ~
 image_asset: ~
+color: ~
 keywords:
   - jekyll
 

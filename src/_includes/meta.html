@@ -111,6 +111,10 @@
         content="https://www.youtube.com/v/{{ page.meta.youtube }}">
 {% endif %}
 
+{% if site.data.meta.color %}
+  <meta name="theme-color" content="{{site.data.meta.color}}">
+{% endif %}
+
 {% if page.meta.type %}
   <meta property="og:type" content="{{ page.meta.type }}">
 {% endif %}
