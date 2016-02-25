@@ -1,7 +1,7 @@
 {
   "name": "makenew-jekyll-site",
   "version": "1.3.1",
-  "description": "Jekyll site skeleton.",
+  "description": "Demo site for Make New's Jekyll site skeleton.",
   "main": "index.html",
   "private": true,
   "authors": [
@@ -21,7 +21,6 @@
     "node_modules",
     "bower_components",
     "dist",
-    "makenew.sh",
     "package.json",
     "npm-shrinkwrap.json",
     "Gemfile",
