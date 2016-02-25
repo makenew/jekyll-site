@@ -1,5 +1,6 @@
 # Jekyll Site Skeleton
 
+[<img src="https://makenew.github.io/makenew.svg" alt="Make New" height="20">](https://makenew.github.io/)
 [![GitHub release](https://img.shields.io/github/release/makenew/jekyll-site.svg)](https://github.com/makenew/jekyll-site/releases)
 [![GitHub license](https://img.shields.io/github/license/makenew/jekyll-site.svg)](./LICENSE.txt)
 [![Gemnasium](https://img.shields.io/gemnasium/makenew/jekyll-site.svg)](https://gemnasium.com/makenew/jekyll-site)
