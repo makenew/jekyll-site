@@ -10,7 +10,11 @@
 
 Bootstrap a new [Jekyll] site in less than a minute.
 
+Check out the **[live demo]** and its **[source code]**!
+
 [Jekyll]: https://jekyllrb.com/
+[live demo]: https://makenew.github.io/jekyll-site/
+[source code]: https://github.com/makenew/jekyll-site/tree/demo
 
 ### Features
 
