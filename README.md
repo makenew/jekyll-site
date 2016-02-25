@@ -9,7 +9,18 @@
 
 ## Description
 
-Demo site for Make New's Demo site for Make New's Jekyll site skeleton.
+[Demo site] for [Make New's Jekyll site skeleton].
+
+Includes the following extras:
+
+- Deploy to [GitHub pages] locally or from [Travis CI].
+- Optimized deployment build with [HTMLMinifier].
+
+[Demo site]: https://makenew.github.io/jekyll-site/
+[GitHub pages]: https://pages.github.com/
+[HTMLMinifier]: https://github.com/kangax/html-minifier
+[Make New's Jekyll site skeleton]: https://github.com/makenew/jekyll-site
+[Travis CI]: https://travis-ci.org/
 
 ## Quickstart
 
