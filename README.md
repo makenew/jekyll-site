@@ -111,6 +111,19 @@ Start the livereload server in the background with
 $ guard
 ```
 
+### gulp
+
+Deployment is handled by [gulp].
+
+If installed globally, `gulp` may be invoked directly.
+View available commands with
+
+```
+$ gulp --tasks
+```
+
+[gulp]: http://gulpjs.com/
+
 ## Other Features
 
 ### Modernizr
@@ -177,6 +190,35 @@ or according to the following rules.
 
 [Open Graph]: http://ogp.me/
 [Twitter Cards]: https://dev.twitter.com/cards/
+
+#### HTMLMinifier
+
+Minify all `.html` files in the `dist` directory with
+
+```
+$ npm run minify
+```
+
+### Deploy to GitHub Pages
+
+Deploy the `dist` directory to GitHub Pages with
+
+```
+$ npm run deploy
+```
+
+This will minify the HTML before deployment.
+Deploy the `public` directory as-is with
+
+```
+$ npm run gh-pages
+```
+
+If `SOURCE_BRANCH` is set as a Travis CI environment variable,
+then commits pushed to that branch will be deployed automatically.
+This requires `.travis/deploy.key.enc` to be encrypted on Travis,
+the corresponding decryption command in `.travis/deploy.sh`, and
+the corresponding public key added as a deploy key to the GitHub repository.
 
 ## Contributing
 

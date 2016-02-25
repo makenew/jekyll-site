@@ -5,6 +5,11 @@
 # For more details, visit the project page:
 # https://github.com/github/gitignore
 
+# Deploy directory and keys
+.publish/
+.travis/deploy.key
+.travis/deploy.key.pub
+
 # Bower components directory
 bower_components/
 
