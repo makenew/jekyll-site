@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://makenew.github.io/jekyll-site/">
 <meta property="og:site_name" content="makenew-jekyll-site">
 <meta name="application-name" content="makenew-jekyll-site">
-<meta property="og:updated_time" content="2016-02-25T23:42:47+00:00">
+<meta property="og:updated_time" content="2016-02-27T04:46:16+00:00">
 <meta property="og:locale" content="en_US">
 <meta property="keywords" content="jekyll">
 <meta name="msapplication-config" content="none">
@@ -37,11 +37,28 @@
 <meta name="msapplication-square150x150logo" content="https://makenew.github.io/jekyll-site/assets/favicon/mstile-150x150-a99c2a74db1e8ed5ce4560fcdc7b474ee16b4213cce3ab4d1be1753848dcd3f9.png">
 <meta name="msapplication-wide310x150logo" content="https://makenew.github.io/jekyll-site/assets/favicon/mstile-310x150-7dd64e128a3ba6d389e5190b22a7fdab50f95c6a50cbf68f813d740bff1b0e36.png">
 <meta name="msapplication-square310x310logo" content="https://makenew.github.io/jekyll-site/assets/favicon/mstile-310x310-7edd009964d07595221bac154fa96749a5d7b3efaba7f52077d7043f5b5d384a.png">
-<link rel="stylesheet" href="https://makenew.github.io/jekyll-site/assets/main-f7978b7258ff8172fb5553402664fdded2759efb041e94dce212e4d7cc914c13.css">
+<link rel="stylesheet" href="https://makenew.github.io/jekyll-site/assets/main-241bda2eb26d0d7454313271d8f103b06acb43cfa68d8db632cd89c7f4a619ed.css">
 <script src="https://makenew.github.io/jekyll-site/assets/vendor/modernizr-3db65bd526888304e2a6b9f53d7bd3a0e87643ac84674e08be79dc950e6539a9.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.20/webfontloader.js"></script>
+<script>"use strict";WebFont.load({google:{families:["Noto Sans","Inconsolata"]}})</script>
 </head>
 <body>
-<h1>Make New Jekyll Site Demo</h1>
+<main class="line-numbers">
+<h1 id="make-new-jekyll-site-demo">Make New Jekyll Site Demo</h1>
+<h2 id="code-highlighting-with-prism">Code highlighting with <a href="http://prismjs.com/">Prism</a></h2>
+<h3 id="express-server-example"><a href="http://expressjs.com/">Express</a> server example</h3>
+<pre><code class="language-javascript">var express = require('express')
+var app = express()
+
+app.get('/', function (req, res) {
+  res.send('Hello World!')
+})
+
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!')
+})
+</code></pre>
+</main>
 </body>
-<script src="https://makenew.github.io/jekyll-site/assets/main-6ce90b3a5b0617cd0439ea45b3602319a395e2d5462fcbb21986d835e08aa12d.js"></script>
+<script src="https://makenew.github.io/jekyll-site/assets/main-db7f88efbb23f69b9e2ed8ad1d0feb0364598240de1d64f5723ff1d5f4a62ee9.js"></script>
 </html>
