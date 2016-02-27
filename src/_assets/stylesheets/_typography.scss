@@ -42,6 +42,6 @@ pre {
   // scss-lint:disable QualifyingElement
   code[class*='language-'],
   pre[class*='language-'] {
-    font-family: font(code), font(monospace);
+    font-family: font(monospace);
   }
 }
