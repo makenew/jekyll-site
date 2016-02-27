@@ -39,9 +39,10 @@ pre {
 }
 
 .highlight {
-  // scss-lint:disable QualifyingElement
-  code[class*='language-'],
-  pre[class*='language-'] {
-    font-family: font(monospace);
+  code,
+  pre {
+    &[class*='language-'] {
+      font-family: font(monospace);
+    }
   }
 }
