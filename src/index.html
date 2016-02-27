@@ -2,4 +2,28 @@
 layout: page
 ---
 
-<h1>{{ site.data.meta.title }}</h1>
+{% capture main %}
+# {{ site.data.meta.title }}
+
+## Code highlighting with [Prism]
+
+### [Express] server example
+
+~~~javascript
+var express = require('express')
+var app = express()
+
+app.get('/', function (req, res) {
+  res.send('Hello World!')
+})
+
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!')
+})
+~~~
+
+[Express]: http://expressjs.com/
+[Prism]: http://prismjs.com/
+{% endcapture %}
+
+{{ main | markdownify }}

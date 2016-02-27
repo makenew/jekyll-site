@@ -16,4 +16,5 @@ http://www.levien.com/type/myfonts/inconsolata.html
 https://modernizr.com/
 https://necolas.github.io/normalize.css/
 https://www.google.com/get/noto/
+http://prismjs.com/
 https://github.com/typekit/webfontloader

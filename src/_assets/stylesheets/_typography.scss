@@ -37,3 +37,11 @@ pre {
     font-weight: 200;
   }
 }
+
+.highlight {
+  // scss-lint:disable QualifyingElement
+  code[class*='language-'],
+  pre[class*='language-'] {
+    font-family: font(code), font(monospace);
+  }
+}

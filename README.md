@@ -13,9 +13,10 @@
 
 Includes the following extras:
 
+- Load [Noto] and [Inconsolata] fonts with [Web Font Loader].
+- Code syntax highlighting with [Prism].
 - Deploy to [GitHub pages] locally or from [Travis CI].
 - Optimized deployment build with [HTMLMinifier].
-- Load [Noto] and [Inconsolata] fonts with [Web Font Loader].
 
 [Demo site]: https://makenew.github.io/jekyll-site/
 [GitHub pages]: https://pages.github.com/
@@ -23,6 +24,7 @@ Includes the following extras:
 [Inconsolata]: http://www.levien.com/type/myfonts/inconsolata.html
 [Make New's Jekyll site skeleton]: https://github.com/makenew/jekyll-site
 [Noto]: https://www.google.com/get/noto/
+[Prism]: http://prismjs.com/
 [Travis CI]: https://travis-ci.org/
 [Web Font Loader]: https://github.com/typekit/webfontloader
 
