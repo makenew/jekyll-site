@@ -1,0 +1,39 @@
+@function font($family) {
+  @return map-get($font-families, $family);
+}
+
+$font-families: (
+  sans-serif: (
+    'Noto Sans',
+    'Open Sans',
+    'Source Sans Pro',
+    'Helvetica Neue',
+    Helvetica,
+    Roboto,
+    Arial,
+    sans-serif
+  ),
+  monospace: (
+    'Inconsolata-g',
+    'Inconsolata-dz',
+    Inconsolata,
+    'DejaVu Mono',
+    Consolas,
+    monospace
+  )
+);
+
+body {
+  font-family: font(sans-serif);
+}
+
+code,
+pre {
+  font-family: font(monospace);
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-weight: 200;
+  }
+}

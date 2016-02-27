@@ -1,0 +1,4 @@
+---
+src:
+  webfontloader: >-
+    https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.20/webfontloader.js

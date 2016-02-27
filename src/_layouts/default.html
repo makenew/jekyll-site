@@ -7,6 +7,9 @@
     {% include head.html %}
     {% stylesheet main %}
     {% javascript vendor/modernizr %}
+    <script src="{{ site.data.vendor.src.webfontloader }}">
+    </script>
+    <script>{% asset fonts %}</script>
   </head>
   <body>
     {{ content }}
