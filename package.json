@@ -30,7 +30,7 @@
   ],
   "dependencies": {
     "modernizr": "~3.3.1",
-    "vulcanize": "^1.14.6"
+    "vulcanize": "~1.14.6"
   },
   "devDependencies": {
     "bower": "^1.7.4",
