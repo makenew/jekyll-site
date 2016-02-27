@@ -7,4 +7,8 @@ guard :shell do
   watch 'modernizr-config.json' do
     `npm run modernizr`
   end
+
+  watch %r{src/_assets/elements/(?!vulcanized)\w+.html} do
+    `npm run vulcanize`
+  end
 end

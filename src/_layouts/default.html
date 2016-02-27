@@ -7,6 +7,8 @@
     {% include head.html %}
     {% stylesheet main %}
     {% javascript vendor/modernizr %}
+    {% javascript webcomponentsjs/webcomponents-lite %}
+    <link rel="import" href="{% asset_path vulcanized %}">
     <script src="{{ site.data.vendor.src.webfontloader }}">
     </script>
     <script>{% asset fonts %}</script>

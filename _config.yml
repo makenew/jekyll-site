@@ -12,6 +12,7 @@ highlighter: none
 assets:
   sources:
     - _assets/bower_components
+    - _assets/elements
 
 livereload:
   port: 35729

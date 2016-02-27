@@ -13,6 +13,7 @@
 
 Includes the following extras:
 
+- [Vulcanized][Vucanize] [Polymer] paper elements.
 - Load [Noto] and [Inconsolata] fonts with [Web Font Loader].
 - Code syntax highlighting with [Prism].
 - Deploy to [GitHub pages] locally or from [Travis CI].
@@ -24,8 +25,10 @@ Includes the following extras:
 [Inconsolata]: http://www.levien.com/type/myfonts/inconsolata.html
 [Make New's Jekyll site skeleton]: https://github.com/makenew/jekyll-site
 [Noto]: https://www.google.com/get/noto/
+[Polymer]: https://www.polymer-project.org/
 [Prism]: http://prismjs.com/
 [Travis CI]: https://travis-ci.org/
+[Vucanize]: https://github.com/Polymer/vulcanize
 [Web Font Loader]: https://github.com/typekit/webfontloader
 
 ## Quickstart
@@ -208,7 +211,21 @@ or according to the following rules.
 [Open Graph]: http://ogp.me/
 [Twitter Cards]: https://dev.twitter.com/cards/
 
-#### HTMLMinifier
+### Vulcanized Web Components
+
+Web components imported in `src/_assets/elements/elements.html`
+will be vulcanized to `src/_assets/elements/vulcanized.html`.
+
+Run vulcanize with
+
+```
+$ npm run vulcanize
+```
+
+If Guard is running, then `vulcanized.html` will be regenerated
+automatically whenever other files in `src/_assets/elements` change.
+
+### HTMLMinifier
 
 Minify all `.html` files in the `dist` directory with
 
