@@ -1,5 +1,24 @@
+@import 'colors';
 @import 'typography';
 
+body {
+  background-color: $primary-color-light;
+}
+
 main {
-  margin: 1rem;
+  padding: 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom-style: dotted;
+  border-color: $accent-color;
+  border-bottom-width: 1px;
+}
+
+main > paper-material {
+  padding: 1rem;
+  color: $primary-color-text;
+  background-color: $primary-color-dark;
 }
