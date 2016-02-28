@@ -16,7 +16,7 @@ const scss = [
 
 const html = [
   'dist/**/*.html',
-  '!dist/**/vulcanized-*.html'
+  '!dist/**/vulcanized*.html'
 ]
 
 gulp.task('default', ['watch'])
