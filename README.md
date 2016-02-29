@@ -13,6 +13,7 @@
 
 Includes the following extras:
 
+- Optimized Modernizr build with [customizr].
 - [Vulcanized][Vucanize] [Polymer] paper elements.
 - Load [Noto] and [Inconsolata] fonts with [Web Font Loader].
 - Code syntax highlighting with [Prism].
@@ -21,6 +22,7 @@ Includes the following extras:
 - Deploy to [GitHub pages] locally or from [Travis CI].
 - Optimized deployment build with [HTMLMinifier].
 
+[customizr]: https://github.com/Modernizr/customizr
 [Demo site]: https://makenew.github.io/jekyll-site/
 [GitHub pages]: https://pages.github.com/
 [gulp]: http://gulpjs.com/
@@ -121,7 +123,7 @@ $ npm run bower
 Run `$ rake -T` to see all Rake tasks.
 
 ```
-rake build    # Generate and test a production build of the Jekyll site
+rake build    # Generate, optimize, and test a production build of the Jekyll site
 rake clean    # Remove build files with jekyll clean
 rake default  # Default task
 rake dev      # Start a local Jekyll development server
@@ -238,13 +240,15 @@ $ npm run vulcanize
 If Guard is running, then `vulcanized.html` will be regenerated
 automatically whenever other files in `src/_assets/elements` change.
 
-### HTMLMinifier
+### Build Optimization
 
-Minify all `.html` files in the `dist` directory with
+Optimize files in the `dist` directory with
 
 ```
-$ npm run minify
+$ npm run optimize
 ```
+
+This will tailor a customized Modernizr build and minify all html files.
 
 ### Deploy to GitHub Pages
 
@@ -252,13 +256,6 @@ Deploy the `dist` directory to GitHub Pages with
 
 ```
 $ npm run deploy
-```
-
-This will minify the HTML before deployment.
-Deploy the `public` directory as-is with
-
-```
-$ npm run gh-pages
 ```
 
 If `SOURCE_BRANCH` is set as a Travis CI environment variable,
