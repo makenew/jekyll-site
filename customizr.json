@@ -1,0 +1,12 @@
+{
+  "options": [
+    "setClasses"
+  ],
+  "dest" : "dist/assets/modernizr.js",
+  "uglify" : true,
+  "files" : {
+    "src": [
+      "dist/**/*"
+    ]
+  }
+}

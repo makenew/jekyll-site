@@ -178,7 +178,11 @@ $ npm run modernizr
 If Guard is running, then `modernizr.js` will be regenerated
 automatically whenever `modernizr-config.json` changes.
 
+For the production build, the Modernizr build is generated
+by [customizr] from `customizr.json`.
+
 [Configure modernizr]: https://modernizr.com/download#setclasses
+[customizr]: https://github.com/Modernizr/customizr
 
 ### Meta Tags
 
