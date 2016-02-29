@@ -6,6 +6,7 @@ const gulp = require('gulp')
 const $ = require('gulp-load-plugins')()
 
 const pkg = require('./package.json')
+const modernizr = require('./modernizr-config.json')
 
 const js = [
   'src/_assets/javascripts/**/*.js',
@@ -68,7 +69,7 @@ gulp.task('watch', () => {
 
 gulp.task('modernizr', () => {
   return gulp.src('dist/**/*')
-    .pipe($.modernizr('assets/modernizr.js'))
+    .pipe($.modernizr('assets/modernizr.js'), {options: modernizr.options})
     .pipe($.uglify())
     .pipe(gulp.dest('dist'))
 })
