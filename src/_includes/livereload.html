@@ -1,3 +1,6 @@
-<script type="text/javascript"
-        src="//{{ site.host }}:{{ site.livereload.port }}/livereload.js">
+<script>
+  var livereload = document.createElement('script')
+  livereload.src = '//' + window.location.hostname +
+    ':{{ site.livereload.port }}/livereload.js'
+  document.head.appendChild(livereload)
 </script>
