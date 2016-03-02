@@ -3,7 +3,7 @@ Author: Evan Sosenko
 Email: razorx@evansosenko.com
 
 /* SITE */
-Last update: 2016-03-02 04:20:57 +0000
+Last update: 2016-03-02 04:23:47 +0000
 URL: https://makenew.github.io/jekyll-site
 Source: https://github.com/makenew/jekyll-site
 
