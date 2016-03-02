@@ -1,6 +1,6 @@
 {
   "name": "makenew-jekyll-site",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "Jekyll site skeleton.",
   "main": "index.html",
   "private": true,
