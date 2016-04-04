@@ -1,4 +1,4 @@
-require 'html/proofer'
+require 'html-proofer'
 
 desc 'Default task'
 task default: :build
