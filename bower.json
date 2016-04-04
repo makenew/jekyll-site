@@ -1,6 +1,6 @@
 {
   "name": "makenew-jekyll-site",
-  "version": "1.3.3",
+  "version": "1.4.0",
   "description": "Demo site for Make New's Jekyll site skeleton.",
   "main": "index.html",
   "private": true,
@@ -31,7 +31,7 @@
   "dependencies": {
     "console-polyfill": "0.2.2",
     "fastclick": "1.0.6",
-    "normalize-css": "3.0.3",
+    "normalize-css": "4.0.0",
     "prism": "1.4.1",
     "polymer": "1.3.0",
     "webcomponentsjs": "0.7.21",
