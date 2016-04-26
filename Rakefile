@@ -19,7 +19,7 @@ end
 
 desc 'Generate and test a production build of the Jekyll site'
 task build: :clean do
-  ENV['JEKYLL_ENV'] = 'production'
+  ENV['JEKYLL_ENV'] ||= 'production'
   sh(*%W(bundle exec jekyll build
          --config _config.yml,_config.#{ENV['JEKYLL_ENV']}.yml))
   HTMLProofer.check_directory('dist', disable_external: true).run
