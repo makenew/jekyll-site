@@ -91,10 +91,13 @@ gulp.task('hash', () => {
 gulp.task('minify', () => {
   return gulp.src(`${paths.dist}/**/*.html`)
     .pipe($.htmlmin({
+      collapseBooleanAttributes: true,
       collapseWhitespace: true,
       preserveLineBreaks: true,
+      removeComments: true,
       removeScriptTypeAttributes: true,
       removeStyleLinkTypeAttributes: true,
+      minifyCSS: true,
       minifyJS: true
     }))
     .pipe(gulp.dest(paths.dist))
