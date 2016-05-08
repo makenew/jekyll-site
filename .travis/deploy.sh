@@ -38,8 +38,8 @@ eval "$(ssh-agent -s)"
 chmod 600 .travis/deploy.key
 ssh-add .travis/deploy.key
 
-git config --global user.name 'Evan Sosenko'
-git config --global user.email 'razorx@evansosenko.com'
+git config --global user.name "${GIT_USER_NAME:=Evan Sosenko}"
+git config --global user.email "${GIT_USER_EMAIL:=razorx@evansosenko.com}"
 
 npm run deploy
 

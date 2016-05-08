@@ -267,6 +267,8 @@ then commits pushed to that branch will be deployed automatically.
 This requires `.travis/deploy.key.enc` to be encrypted on Travis,
 the corresponding decryption command in `.travis/deploy.sh`, and
 the corresponding public key added as a deploy key to the GitHub repository.
+The commit user name and email may be overridden by setting
+`GIT_USER_NAME` and `GIT_USER_EMAIL`.
 
 ## Contributing
 
