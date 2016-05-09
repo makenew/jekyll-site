@@ -1,12 +1,10 @@
-/* global WebFont */
-
 'use strict'
 
-WebFont.load({
+window.WebFontConfig = {
   google: {
     families: [
       'Noto Sans',
       'Inconsolata'
     ]
   }
-})
+}
