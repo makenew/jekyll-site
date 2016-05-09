@@ -32,8 +32,10 @@ layout: page
 [Travis CI]: https://travis-ci.org/
 [Vucanize]: https://github.com/Polymer/vulcanize
 [Web Font Loader]: https://github.com/typekit/webfontloader
+{% endcapture %}
 
-## [Express] server example with Prism highlighting
+{% capture express-example %}
+### [Express] server example with Prism highlighting
 
 ~~~javascript
 var express = require('express')
@@ -49,9 +51,11 @@ app.listen(3000, function () {
 ~~~
 
 [Express]: http://expressjs.com/
-[Prism]: http://prismjs.com/
 {% endcapture %}
 
-<main>
+<paper-material>
   {{ main | markdownify }}
-</main>
+  <paper-button raised onclick="toast.open()">Press me!</paper-button>
+  {{ express-example | markdownify }}
+</paper-material>
+<paper-toast id="toast" text="I'm a web component!"></paper-toast>
