@@ -5,9 +5,35 @@ layout: page
 {% capture main %}
 # {{ site.data.meta.title }}
 
-## Code highlighting with [Prism]
+## Includes the following extras
 
-### [Express] server example
+- Optimized Modernizr build with [customizr].
+- [Vulcanized][Vucanize] [Polymer] paper elements.
+- Load [Noto] and [Inconsolata] fonts with [Web Font Loader].
+- Code syntax highlighting with [Prism].
+- Automatic linting through [gulp] with
+  the [JavaScript Standard Style], [Sass Lint], and [HTMLHint].
+- Deploy to [GitHub pages] locally or from [Travis CI].
+- Optimized deployment build with [HTMLMinifier].
+
+[customizr]: https://github.com/Modernizr/customizr
+[Demo site]: https://makenew.github.io/jekyll-site/
+[GitHub pages]: https://pages.github.com/
+[gulp]: http://gulpjs.com/
+[HTMLHint]: https://github.com/yaniswang/HTMLHint
+[HTMLMinifier]: https://github.com/kangax/html-minifier
+[Inconsolata]: http://www.levien.com/type/myfonts/inconsolata.html
+[JavaScript Standard Style]: http://standardjs.com/
+[Make New's Jekyll site skeleton]: https://github.com/makenew/jekyll-site
+[Noto]: https://www.google.com/get/noto/
+[Polymer]: https://www.polymer-project.org/
+[Prism]: http://prismjs.com/
+[Sass Lint]: https://github.com/sasstools/sass-lint
+[Travis CI]: https://travis-ci.org/
+[Vucanize]: https://github.com/Polymer/vulcanize
+[Web Font Loader]: https://github.com/typekit/webfontloader
+
+## [Express] server example with Prism highlighting
 
 ~~~javascript
 var express = require('express')
