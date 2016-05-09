@@ -24,7 +24,7 @@
     "lint": "gulp lint",
     "lint:watch": "gulp watch",
     "modernizr": "modernizr -c modernizr-config.json -d src/_assets/javascripts/vendor/modernizr.js",
-    "vulcanize": "vulcanize src/_assets/elements/elements.html > src/_assets/elements/vulcanized.html",
+    "vulcanize": "vulcanize --inline-css --inline-scripts src/_assets/elements/elements.html > src/_assets/elements/vulcanized.html",
     "optimize": "npm run customizr && gulp hash && gulp minify"
   },
   "files": [
