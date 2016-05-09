@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://makenew.github.io/jekyll-site/">
 <meta property="og:site_name" content="makenew-jekyll-site">
 <meta name="application-name" content="makenew-jekyll-site">
-<meta property="og:updated_time" content="2016-05-09T02:01:59+00:00">
+<meta property="og:updated_time" content="2016-05-09T02:53:25+00:00">
 <meta property="og:locale" content="en_US">
 <meta property="keywords" content="jekyll">
 <meta name="msapplication-config" content="none">
@@ -38,18 +38,27 @@
 <meta name="msapplication-wide310x150logo" content="https://makenew.github.io/jekyll-site/assets/favicon/mstile-310x150-7dd64e128a3ba6d389e5190b22a7fdab50f95c6a50cbf68f813d740bff1b0e36.png">
 <meta name="msapplication-square310x310logo" content="https://makenew.github.io/jekyll-site/assets/favicon/mstile-310x310-7edd009964d07595221bac154fa96749a5d7b3efaba7f52077d7043f5b5d384a.png">
 <link rel="stylesheet" href="https://makenew.github.io/jekyll-site/assets/main-8f2f7a8a7f7a0b287b9842584b38cbf7294bb55ee94830260b5291cc042f8096.css">
-<script src="https://makenew.github.io/jekyll-site/assets/modernizr-228201744a14259e19b02a887a3a80345f74af1f.js">
-<script type="text/javascript" src="https://makenew.github.io/jekyll-site/assets/webcomponentsjs/webcomponents-lite-e6bb95978b3584f78bdc6c509b98e4fcd4bbd84805ce5f1ef1a9ef49968a3042.js"></script>
-<link rel="import" href="https://makenew.github.io/jekyll-site/assets/vulcanized-adeb9e833a36f8fed3b9adc08f7f9fde3822e302a94a4215971f1ff4190b6eb8.html">
+<script src="https://makenew.github.io/jekyll-site/assets/fonts-c86accfadd1a41f46a63731ccd98d81954cf04525cea031b13d859b3db626d28.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.20/webfontloader.js"></script>
-<script>"use strict";WebFont.load({google:{families:["Noto Sans","Inconsolata"]}})</script>
+<script src="https://makenew.github.io/jekyll-site/assets/webcomponentsjs/webcomponents-lite-e6bb95978b3584f78bdc6c509b98e4fcd4bbd84805ce5f1ef1a9ef49968a3042.js"></script>
+<link rel="import" href="https://makenew.github.io/jekyll-site/assets/vulcanized-c8722e651a61cecbbcef741382a1ab5d09686dd20e323a2f908942ddff1bd2a1.html">
 </head>
-<body unresolved>
-<main class="line-numbers">
-<paper-material elevation="2">
+<body>
+<main class="line-numbers" unresolved>
+<paper-material>
 <h1 id="make-new-jekyll-site-demo">Make New Jekyll Site Demo</h1>
-<h2 id="code-highlighting-with-prism">Code highlighting with <a href="http://prismjs.com/">Prism</a></h2>
-<h3 id="express-server-example"><a href="http://expressjs.com/">Express</a> server example</h3>
+<h2 id="includes-the-following-extras">Includes the following extras</h2>
+<ul>
+<li>Optimized Modernizr build with <a href="https://github.com/Modernizr/customizr">customizr</a>.</li>
+<li><a href="https://github.com/Polymer/vulcanize">Vulcanized</a> <a href="https://www.polymer-project.org/">Polymer</a> paper elements.</li>
+<li>Load <a href="https://www.google.com/get/noto/">Noto</a> and <a href="http://www.levien.com/type/myfonts/inconsolata.html">Inconsolata</a> fonts with <a href="https://github.com/typekit/webfontloader">Web Font Loader</a>.</li>
+<li>Code syntax highlighting with <a href="http://prismjs.com/">Prism</a>.</li>
+<li>Automatic linting through <a href="http://gulpjs.com/">gulp</a> with the <a href="http://standardjs.com/">JavaScript Standard Style</a>, <a href="https://github.com/sasstools/sass-lint">Sass Lint</a>, and <a href="https://github.com/yaniswang/HTMLHint">HTMLHint</a>.</li>
+<li>Deploy to <a href="https://pages.github.com/">GitHub pages</a> locally or from <a href="https://travis-ci.org/">Travis CI</a>.</li>
+<li>Optimized deployment build with <a href="https://github.com/kangax/html-minifier">HTMLMinifier</a>.</li>
+</ul>
+<paper-button raised onclick="toast.open()">Press me!</paper-button>
+<h3 id="express-server-example-with-prism-highlighting"><a href="http://expressjs.com/">Express</a> server example with Prism highlighting</h3>
 <pre><code class="language-javascript">var express = require('express')
 var app = express()
 
@@ -62,7 +71,9 @@ app.listen(3000, function () {
 })
 </code></pre>
 </paper-material>
+<paper-toast id="toast" text="I'm a web component!"></paper-toast>
 </main>
-<script src="https://makenew.github.io/jekyll-site/assets/main-78354cbd2e357698129eb1cab717888bedee405dc5f73b9e9f44a7cdee28dc67.js"></script>
+<script src="https://makenew.github.io/assets/modernizr-96dce0aa641c0c07fbb99bacb2ab6e2891099ea0.js" defer></script>
+<script src="https://makenew.github.io/jekyll-site/assets/main-78354cbd2e357698129eb1cab717888bedee405dc5f73b9e9f44a7cdee28dc67.js" defer></script>
 </body>
 </html>
