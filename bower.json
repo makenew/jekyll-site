@@ -32,6 +32,6 @@
   "dependencies": {
     "console-polyfill": "0.2.2",
     "fastclick": "1.0.6",
-    "normalize-css": "4.0.0"
+    "normalize-css": "4.1.1"
   }
 }
