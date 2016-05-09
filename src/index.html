@@ -3,8 +3,6 @@ layout: page
 ---
 
 {% capture main %}
-# {{ site.data.meta.title }}
-
 ## Includes the following extras
 
 - Optimized Modernizr build with [customizr].
@@ -55,6 +53,13 @@ app.listen(3000, function () {
 {% endcapture %}
 
 <paper-material>
+  <h1>{{ site.data.meta.title }}</h1>
+  <paper-button>
+    <a href="https://github.com/makenew/jekyll-site/tree/demo">Source code</a>
+  </paper-button>
+  <paper-button>
+    <a href="https://github.com/makenew/jekyll-site">Bootstrap a new site</a>
+  </paper-button>
   {{ main | markdownify }}
   <paper-button raised onclick="toast.open()">Press me!</paper-button>
   {{ express-example | markdownify }}
