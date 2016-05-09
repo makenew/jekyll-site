@@ -28,6 +28,7 @@ const paths = {
 }
 
 gulp.task('default', ['watch'])
+gulp.task('optimize', ['minify', 'imagemin'])
 gulp.task('lint', ['standard', 'sass-lint', 'htmlhint'])
 
 gulp.task('htmlhint', () => {
@@ -100,6 +101,12 @@ gulp.task('minify', () => {
       minifyCSS: true,
       minifyJS: true
     }))
+    .pipe(gulp.dest(paths.dist))
+})
+
+gulp.task('imagemin', () => {
+  return gulp.src(`${paths.dist}/**/*`)
+    .pipe($.imagemin())
     .pipe(gulp.dest(paths.dist))
 })
 

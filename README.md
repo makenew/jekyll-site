@@ -20,7 +20,7 @@ Includes the following extras:
 - Automatic linting through [gulp] with
   the [JavaScript Standard Style], [Sass Lint], and [HTMLHint].
 - Deploy to [GitHub pages] locally or from [Travis CI].
-- Optimized deployment build with [HTMLMinifier].
+- Optimized deployment build with [HTMLMinifier] and [imagemin].
 
 [customizr]: https://github.com/Modernizr/customizr
 [Demo site]: https://makenew.github.io/jekyll-site/
@@ -28,6 +28,7 @@ Includes the following extras:
 [gulp]: http://gulpjs.com/
 [HTMLHint]: https://github.com/yaniswang/HTMLHint
 [HTMLMinifier]: https://github.com/kangax/html-minifier
+[imagemin]: https://github.com/imagemin/imagemin
 [Inconsolata]: http://www.levien.com/type/myfonts/inconsolata.html
 [JavaScript Standard Style]: http://standardjs.com/
 [Make New's Jekyll site skeleton]: https://github.com/makenew/jekyll-site
