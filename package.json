@@ -48,7 +48,7 @@
     "gulp-plumber": "^1.1.0",
     "gulp-replace": "^0.5.4",
     "gulp-sass-lint": "^1.1.1",
-    "gulp-standard": "^6.0.5",
+    "gulp-standard": "^7.0.1",
     "gulp-watch": "^4.3.5",
     "vulcanize": "^1.14.6"
   }
