@@ -20,11 +20,22 @@ end
 desc 'Generate, optimize, and test a production build of the Jekyll site'
 task build: :clean do
   ENV['JEKYLL_ENV'] ||= 'production'
-  sh(*%W(bundle exec jekyll build
-         --config _config.yml,_config.#{ENV['JEKYLL_ENV']}.yml))
+  configs = %W(_config.yml _config.#{ENV['JEKYLL_ENV']}.yml)
+  config = configs.map(&YAML.method(:load_file)).reduce(&:merge)
+
+  sh(*%W(bundle exec jekyll build --config #{configs.join(',')}))
   sh(*%w(npm run lint))
   sh(*%w(npm run optimize))
-  HTMLProofer.check_directory('dist', disable_external: true).run
+
+  HTMLProofer.check_directory(
+    'dist',
+    enforce_https: true,
+    check_html: true,
+    check_favicon: true,
+    assume_extension: true,
+    url_ignore: [%r{^#{config['url']}/} => '/'],
+    url_swap: { %r{^#{config['baseurl']}/} => '/' }
+  ).run
 end
 
 desc 'Start a local Jekyll development server'
