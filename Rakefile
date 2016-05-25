@@ -29,7 +29,6 @@ task build: :clean do
 
   HTMLProofer.check_directory(
     'dist',
-    enforce_https: true,
     check_html: true,
     check_favicon: true,
     assume_extension: true,
