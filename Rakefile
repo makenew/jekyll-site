@@ -31,7 +31,7 @@ task build: :clean do
     check_html: true,
     check_favicon: true,
     assume_extension: true,
-    url_ignore: [%r{^#{config['url']}/} => '/'],
+    url_ignore: [%r{^#{config['url']}/}],
     url_swap: { %r{^#{config['baseurl']}/} => '/' }
   ).run
 end
