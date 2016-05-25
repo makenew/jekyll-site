@@ -71,7 +71,7 @@ Check out the **[live demo]** and its **[source code]**!
    Optionally, reset to the latest [release][Releases] with
 
    ```
-   $ git reset --hard jekyll-site-v1.5.1
+   $ git reset --hard jekyll-site-v1.6.0
    ```
 
 2. Run
