@@ -23,7 +23,7 @@ task build: :clean do
   configs = %W(_config.yml _config.#{ENV['JEKYLL_ENV']}.yml)
   config = configs.map(&YAML.method(:load_file)).reduce(&:merge)
 
-  sh(*%(bundle exec jekyll build --config #{configs.join(',')}))
+  sh(*%W(bundle exec jekyll build --config #{configs.join(',')}))
 
   HTMLProofer.check_directory(
     'dist',
