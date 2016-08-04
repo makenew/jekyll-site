@@ -35,7 +35,7 @@ makenew () {
   read -p '> Site description: ' mk_description
   read -p '> Version number: ' mk_version
   read -p '> Site domain (e.g., makenew.github.io): ' mk_domain
-  read -p '> Site base url (e.g., / or /jekyll-site): ' mk_baseurl
+  read -p '> Site base url (leave empty or e.g., /jekyll-site): ' mk_baseurl
   read -p '> Author name: ' mk_author
   read -p '> Author email: ' mk_email
   read -p '> Copyright owner: ' mk_owner
@@ -46,6 +46,7 @@ makenew () {
   sed -i -e '3d;11,143d;327,330d' README.md
   sed -i -e "10i ${mk_description}" README.md
   sed -i -e '24d' bower.json
+  sed -i -e '1d' _config.production.yml
 
   find_replace "s/version\": \".*\"/version\": \"${mk_version}\"/g"
   find_replace "s/0\.0\.0\.\.\./${mk_version}.../g"
@@ -58,7 +59,10 @@ makenew () {
   find_replace "s/makenew-jekyll-site/${mk_slug}/g"
   find_replace "s/makenew.github.io/${mk_domain}/g"
   find_replace "s/cd jekyll-site/cd ${mk_repo}/g"
-  find_replace "s/\/jekyll-site/$(echo ${mk_baseurl} | sed s/\\//\\\\\\//g)/g"
+
+  if [ -n "$mk_baseurl" ]; then
+    sed -i -e "1i baseurl: ${mk_baseurl}" _config.production.yml
+  fi
 
   mk_attribution='> Built from [makenew/jekyll-site](https://github.com/makenew/jekyll-site).'
   sed -i -e "8i ${mk_attribution}\n" README.md
